@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}add_data page{% endblock %}
+{% block content %}
+<form method="POST" action="/submit">
+    <!-- Author Information -->
+    <label for="personName" class="form-label">person Name:</label>
+    <input type="text" id="personName" name="personName" required><br>
+
+    <label for="age">Person age:</label>
+    <input type="age" id="age" name="age" required><br>
+
+    <label for="gender">gender :</label>
+    <input type="text" id="gender" name="gender" required><br>
+
+    <label for="birthdate">birthdate:</label>
+     <input type="text" id="birthdate" name="birthdate" required><br>
+
+    <label for="city"> city:</label>
+    <input type="text" id="city" name="city" required><br>
+
+     <label for="state"> state:</label>
+    <input type="text" id="state" name="state" required><br>
+
+
+     <label for="country" class="form-label">country :</label>
+    <input type="text" id="country" name="country" required><br>
+
+
+
+
+
+
+
+
+
+    <label for="rank" class="form-label">rank :</label>
+    <input type="text" id="rank" name="rank" required><br>
+
+    <label for="source">source :</label>
+    <input type="text" id="source" name="source" required><br>
+
+    <label for="finalWorth">finalWorth :</label>
+    <input type="text" id="finalWorth" name="finalWorth" required><br>
+
+    <label for="category"> category:</label>
+    <input type="text" id="category" name="category" required><br>
+
+    <!-- Blog Information -->
+    <label for="organization"> organization:</label>
+    <input type="text" id="organization" name="organization" required><br>
+
+    <label for="industries"> industries:</label>
+    <input type="text" id="industries" name="industries" required><br>
+
+
+    <label for="title"> title:</label>
+    <input type="text" id="title" name="title" required><br>
+
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
+

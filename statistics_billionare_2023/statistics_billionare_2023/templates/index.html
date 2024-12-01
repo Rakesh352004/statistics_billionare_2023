@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}index page{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for data in content %}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+              <h5 class="card-title">{{ data.rank }}</h5>
+            <p class="card-text">{{ data.title }}</p>
+            <p  class="card-text">{{ data.finalWorth }}</p>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
